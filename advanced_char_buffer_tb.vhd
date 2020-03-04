@@ -51,7 +51,7 @@ begin
       wr <= '0';
        
       -- Change din before the next test to check that the DUT samples at the right time
-      din <= std_logic_vector(unsigned(din) + 1);
+      din <= std_logic_vector(unsigned(din) + 1); --- ADD ONE TO COLLECT
       wait until rising_edge(clk);
  
       assert dout = last_din
