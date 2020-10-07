@@ -1,0 +1,32 @@
+vsim -gui dot_matrix_sim.uart_tb_final
+add wave -position end  sim:/uart_tb_final/clk
+add wave -position end  sim:/uart_tb_final/rst
+add wave -position end  sim:/uart_tb_final/tx_rx
+add wave -position end  sim:/uart_tb_final/tx_start
+add wave -position end  sim:/uart_tb_final/tx_data
+add wave -position end  sim:/uart_tb_final/tx_busy
+add wave -position end  sim:/uart_tb_final/rx_data
+add wave -position end  sim:/uart_tb_final/rx_valid
+add wave -position end  sim:/uart_tb_final/rx_stop_bit_error
+add wave -position end  sim:/uart_tb_final/UART_TX/clk
+add wave -position end  sim:/uart_tb_final/UART_TX/rst
+add wave -position end  sim:/uart_tb_final/UART_TX/start
+add wave -position end  sim:/uart_tb_final/UART_TX/data
+add wave -position end  sim:/uart_tb_final/UART_TX/busy
+add wave -position end  sim:/uart_tb_final/UART_TX/tx
+add wave -position end  sim:/uart_tb_final/UART_TX/clk_counter
+add wave -position end  sim:/uart_tb_final/UART_TX/state
+add wave -position end  sim:/uart_tb_final/UART_TX/data_sampled
+add wave -position end  sim:/uart_tb_final/UART_TX/bit_counter
+add wave -position end  sim:/uart_tb_final/UART_RX/clk
+add wave -position end  sim:/uart_tb_final/UART_RX/rst
+add wave -position end  sim:/uart_tb_final/UART_RX/rx
+add wave -position end  sim:/uart_tb_final/UART_RX/data
+add wave -position end  sim:/uart_tb_final/UART_RX/valid
+add wave -position end  sim:/uart_tb_final/UART_RX/stop_bit_error
+add wave -position end  sim:/uart_tb_final/UART_RX/state
+add wave -position end  sim:/uart_tb_final/UART_RX/clk_counter
+add wave -position end  sim:/uart_tb_final/UART_RX/bit_counter
+add wave -position end  sim:/uart_tb_final/UART_RX/rx_p1
+add wave -position end  sim:/uart_tb_final/UART_RX/shift_reg
+run
