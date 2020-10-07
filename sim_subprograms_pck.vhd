@@ -31,7 +31,7 @@ package body sim_subprograms is
   procedure print_test_ok is
     variable str : line;
   begin
-    write(str, string'("Test: OK"));
+    write(str, string'("FINAL Test Result: PASSED!"));
     writeline(output, str);
   end procedure;
  
